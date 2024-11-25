@@ -18,6 +18,11 @@ int get_Quantity() const {
     return 0;
 }
 
+//Getter method to retrieve the symbol
+std::string Stock::get_Symbol() const {
+
+    return "blank";
+}
 
 //setter methods which has void return type 
 
@@ -31,4 +36,4 @@ void Stock::set_Quantity(int q) {
     quantity = q;
 }
 
-
+iii
