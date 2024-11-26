@@ -30,7 +30,7 @@ void set_Quantity(int n_);
 //three getter methods get_Symbol, get_Price, and get_Quantity() const {
 std::string get_Symbol() const;
 double get_Price() const;
-int get_Quantity const;
+int get_Quantity() const;
 
 
 }
