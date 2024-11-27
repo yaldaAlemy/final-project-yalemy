@@ -33,4 +33,6 @@ double get_Price() const;
 int get_Quantity() const;
 
 
-}
+};
+
+#endif

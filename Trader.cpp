@@ -44,12 +44,12 @@ void Trader::withdraw_money(double amount) {
 
 
 //getter method to fetch balance
-double Trader::fetch_Balance() {
+double Trader::fetch_Balance() const {
     return 0.0;   //just a placeholder
 }
 
 double Trader::calculate_Port(const std::vector<Stock> &s) const {
-    return 0.0 //placeholder for total port value
+    return 0.0; //placeholder for total port value
 }
 
 

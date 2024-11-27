@@ -1,8 +1,5 @@
 #ifndef TRADER_H
 #define TRADER_H
-
-
-
 #include <string>
 #include <vector>
 #include "Stock.h"
@@ -40,7 +37,7 @@ class Trader {
         //
         void withdraw_money(double amount);
 
-        double calculate_port(const std::vector<Stock> &s) const;
+        double calculate_Port(const std::vector<Stock> &s) const;
 };
 
-
+#endif
