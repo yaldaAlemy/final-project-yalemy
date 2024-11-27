@@ -21,12 +21,12 @@ class Trader {
 
         std::string fetch_Name() const;
 
-        void set_Name(const std::string &name1)
+        void set_Name(const std::string &name1);
 
         double fetch_Balance() const;
 
         void set_Balance(double bal);
- 
+  
 
         //show portfolio
         //
@@ -40,7 +40,7 @@ class Trader {
         //
         void withdraw_money(double amount);
 
-
+        double calculate_port(const std::vector<Stock> &s) const;
 };
 
 
