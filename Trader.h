@@ -38,6 +38,10 @@ class Trader {
         void withdraw_money(double amount);
 
         double calculate_Port(const std::vector<Stock> &s) const;
+
+        void add_Stock(const Stock& stock, int quantity);
+
+        void remove_Stock(const std::string& stockSymbol, int quantity);
 };
 
 #endif

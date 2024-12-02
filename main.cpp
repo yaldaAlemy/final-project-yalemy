@@ -4,6 +4,7 @@
 
 
 int main() {
+
     // Create a Stock object
     Stock stock;
 

@@ -52,5 +52,10 @@ double Trader::calculate_Port(const std::vector<Stock> &s) const {
     return 0.0; //placeholder for total port value
 }
 
+void Trader::add_Stock(const Stock& stock, int quantity) {
+}
+
+void Trader::remove_Stock(const std::string& stockSymbol, int quantity) {
+}
 
 

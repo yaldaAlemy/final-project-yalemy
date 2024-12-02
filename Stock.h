@@ -18,7 +18,7 @@ int quantity;  //variable int for Quantity available
 public:
 //constructor for right now
 Stock();
-
+Stock(const std::string& symbol, double price, int quantity);
 //two setter methods called set_Pricedouble p), and setQuantity(n)
 
 
