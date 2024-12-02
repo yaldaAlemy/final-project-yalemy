@@ -24,7 +24,7 @@ Stock(const std::string& symbol, double price, int quantity);
 
 void set_Price(double p);
 void set_Quantity(int n_);
-
+void set_Symbol(const std::string& symbol);  
 
 
 //three getter methods get_Symbol, get_Price, and get_Quantity() const {

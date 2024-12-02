@@ -8,7 +8,7 @@ Stock::Stock() {}
 
 double Stock::get_Price() const {
 
-    return 0.0;  //returning a placeholder for right now
+    return price;  //returning a placeholder for right now
 }
 
 //Getter method 
@@ -18,10 +18,15 @@ int Stock::get_Quantity() const {
     return 0; //returning a 0 for right now
 }
 
+
+void Stock::set_Symbol(const std::string& symbol) {
+    this->symbol = symbol;  // Set the stock symbol
+}
+
 //Getter method to retrieve the symbol
 std::string Stock::get_Symbol() const {
 
-    return "blank";   //placeholder
+    return symbol;  //placeholder
 }
 
 //setter methods which has void return type 

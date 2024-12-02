@@ -1,5 +1,6 @@
 #include "Trader.h"
-
+using namespace std;
+#include <iostream>
 
 Trader::Trader() {
     name = "";
@@ -30,7 +31,12 @@ void Trader::set_Balance(double bal) {
 //display Trader's portfolio 
 void Trader::show_Portfolio() const {
      //returns nothing
-     //
+     if (portfolio.empty()) {
+         cout << endl;
+         cout << "Your porfolio is currently empty." << endl;
+         return;
+     }
+
 }
 
 void Trader::deposit_money(double amount) {
