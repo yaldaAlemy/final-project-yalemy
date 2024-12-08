@@ -3,22 +3,22 @@
 #include <string>
 #include <vector>
 #include "Stock.h"
-
+using namespace std;
 class Trader {
 
     private:
-        std::string name;
+        string name;
         double balance;
-        std::vector<Stock> portfolio; 
-        std::vector<int> quantities;
+        vector<Stock> portfolio; 
+        vector<int> quantities;
 
     public: 
 
         Trader();
 
-        std::string fetch_Name() const;
+        string fetch_Name() const;
 
-        void set_Name(const std::string &name1);
+        void set_Name(const string &name1);
 
         double fetch_Balance() const;
 
@@ -37,11 +37,11 @@ class Trader {
         //
         void withdraw_money(double amount);
 
-        double calculate_Port(const std::vector<Stock> &s) const;
+        double calculate_Port(const vector<Stock> &s) const;
 
         void add_Stock(const Stock& stock, int quantity);
 
-        void remove_Stock(const std::string& stockSymbol, int quantity);
+        void remove_Stock(const string& stockSymbol, int quantity);
 };
 
 #endif

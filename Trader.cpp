@@ -10,7 +10,7 @@ Trader::Trader() {
 
 //get Trader's name
 std::string Trader::fetch_Name() const {
-    return "";
+    return name;
 
  }
 
@@ -18,14 +18,14 @@ std::string Trader::fetch_Name() const {
 //
 void Trader::set_Name(const std::string &name) {
     //return nothing
-    //
+    this->name = name;
  }
 
 
 //setter for setting the Trader's balance
 void Trader::set_Balance(double bal) {
-     //return nothing
-     //
+     balance = bal;
+     
 }
 
 //display Trader's portfolio 
@@ -45,13 +45,21 @@ void Trader::deposit_money(double amount) {
 }
 
 void Trader::withdraw_money(double amount) {
-    // Placeholder
+    if (amount > balance) {
+        cout << "Insufficient funds, withdraw failed!" << endl;
+     } else if (amount > 0 && amount <= balance) {
+         this->balance -= amount;
+         cout <<"Withdrew this amount: $" << fixed << setprecision(2) << amount << endl;
+         cout << "Your balance now is: $" << fixed << setprecision(2) << balance << endl;
+     } else {
+         cout << "Amount requested to withdraw was negative!" << endl;
+     }
 }
 
 
 //getter method to fetch balance
 double Trader::fetch_Balance() const {
-    return 0.0;   //just a placeholder
+    return balance;   //just a placeholder
 }
 
 double Trader::calculate_Port(const std::vector<Stock> &s) const {

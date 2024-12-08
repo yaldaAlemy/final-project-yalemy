@@ -15,7 +15,7 @@ double Stock::get_Price() const {
 
 int Stock::get_Quantity() const {
 
-    return 0; //returning a 0 for right now
+    return quantity;
 }
 
 

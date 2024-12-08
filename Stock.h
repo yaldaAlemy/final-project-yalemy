@@ -5,7 +5,7 @@
 
 class Stock {
 
-//attributes for Stock {
+//attributes for Stock 
 
 
 private:
