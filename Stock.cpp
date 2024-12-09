@@ -1,7 +1,11 @@
 #include "Stock.h"
-
+using namespace std;
 //constructor that will be edited later
-Stock::Stock() {}
+Stock::Stock(const string& stockSymbol, double stockPrice, int stockQuantity) {
+    this->symbol = stockSymbol;
+    this->price = stockPrice;
+    this->quantity = stockQuantity;
+}
 
 
 //Getter method

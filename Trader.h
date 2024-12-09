@@ -41,7 +41,7 @@ class Trader {
 
         void add_Stock(const Stock& stock, int quantity);
 
-        void remove_Stock(const string& stockSymbol, int quantity);
+        bool remove_Stock(const string& stockSymbol, int quantity);
 };
 
 #endif
